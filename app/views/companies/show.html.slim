@@ -1,0 +1,43 @@
+title 'View company'
+.show-item
+  .image_table
+    = unless company.providers.first.nil?
+      img src = company.providers.first.logo 
+  .well.company.form-horizontal
+
+    .control-group
+      label.control-label
+        | Belongs to
+      .controls
+        .input-xlarge.uneditable-input.user.span7
+          = company.user
+    .control-group
+      label.control-label
+        | Name
+      .controls
+        .input-xlarge.uneditable-input.string.span7
+          = company.name
+    .control-group
+      label.control-label
+        | Address
+      .controls
+        .input-xlarge.uneditable-input.string.span7
+          = company.address
+    .control-group
+      label.control-label
+        | Phone number
+      .controls
+        .input-xlarge.uneditable-input.string.span7
+          = company.phone_number
+    .control-group
+      label.control-label
+        | Current provider
+      .controls
+        .input-xlarge.uneditable-input.string.span7
+          = company.providers.map(&:name)
+  .form-actions
+    = link_to(edit_company_path(company), class: 'btn btn-primary') do
+      i.icon-pencil.icon-white
+      | Edit
+    '  or
+    = link_to 'Back', :back

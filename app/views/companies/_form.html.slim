@@ -1,0 +1,18 @@
+.row
+  .medium-6.columns
+  .scaffold-form
+  = simple_form_for(company) do |f|
+    .form-inputs
+      = f.association :user
+      = f.input :name
+      = f.input :address
+      = f.input :phone_number
+      = f.input :provider_id
+      = f.input :lat
+      = f.input :lng
+
+    .form-actions
+      = f.button :submit
+      '  or
+      = link_to 'Back', :back
+

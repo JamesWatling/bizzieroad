@@ -1,0 +1,12 @@
+.scaffold-form
+  = simple_form_for(provider) do |f|
+    .form-inputs
+      = f.association :industry
+      = f.input :name
+      = f.input :logo
+
+    .form-actions
+      = f.button :submit
+      '  or
+      = link_to 'Back', :back
+

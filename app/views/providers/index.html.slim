@@ -1,0 +1,35 @@
+- title 'Listing providers'
+
+table.table.table-striped
+  thead
+    tr
+        th Industry
+        th Name
+        th Logo
+        th Actions
+
+  - providers.each do |provider|
+    tr
+      td= provider.industry
+      td= provider.name
+      td= provider.logo
+      td.actions
+        = link_to(provider, class: 'btn') do
+          i.icon-eye-open
+          |  Show
+        = link_to(edit_provider_path(provider), class: 'btn') do
+          i.icon-edit
+          |  Edit
+        = link_to(provider, confirm: 'Are you sure?', method: :delete, class: 'btn btn-danger') do
+          i.icon-trash.icon-white
+          |  Delete
+
+.paginator
+  = paginate(providers)
+
+br
+= link_to new_provider_path, class: 'btn btn-primary' do
+  i.icon-plus.icon-white
+  |  New Provider
+
+

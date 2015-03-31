@@ -1,0 +1,28 @@
+- title 'View provider'
+.show-item
+  .well.provider.form-horizontal
+
+    .control-group
+      label.control-label
+        | Industry
+      .controls
+        .input-xlarge.uneditable-input.references.span7
+          = provider.industry
+    .control-group
+      label.control-label
+        | Name
+      .controls
+        .input-xlarge.uneditable-input.string.span7
+          = provider.name
+    .control-group
+      label.control-label
+        | Logo
+      .controls
+        .input-xlarge.uneditable-input.string.span7
+          = provider.logo
+  .form-actions
+    = link_to(edit_provider_path(provider), class: 'btn btn-primary') do
+      i.icon-pencil.icon-white
+      | Edit
+    '  or
+    = link_to 'Back', :back

@@ -1,0 +1,85 @@
+LOG:  database system was shut down at 2015-03-24 14:51:25 SGT
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  role "postgres" does not exist
+FATAL:  role "postgres" does not exist
+FATAL:  role "postgres" does not exist
+FATAL:  role "postgres" does not exist
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  using stale statistics instead of current ones because stats collector is not responding
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No space left on device
+LOG:  couWARNING:  corrupted statistics file "pg_stat_tmp/global.stat"
+FATAL:  database "james" does not exist
+ERROR:  unrecognized configuration parameter "tables"
+STATEMENT:  show tables;
+ERROR:  syntax error at or near "/" at character 1
+STATEMENT:  /dt
+	describe companies
+	;
+ERROR:  syntax error at or near "describe" at character 1
+STATEMENT:  describe companies;
+ERROR:  syntax error at or near "lat" at character 7
+STATEMENT:  alter lat
+	;
+FATAL:  role "postgres" does not exist
+FATAL:  role "postgres" does not exist
+ERROR:  column providers.company_id does not exist at character 46
+STATEMENT:  SELECT "providers".* FROM "providers"  WHERE "providers"."company_id" = $1
+ERROR:  column providers.company_id does not exist at character 46
+STATEMENT:  SELECT "providers".* FROM "providers"  WHERE "providers"."company_id" = $1
+ERROR:  column providers.company_id does not exist at character 46
+STATEMENT:  SELECT "providers".* FROM "providers"  WHERE "providers"."company_id" = $1
+ERROR:  column providers.company_id does not exist at character 46
+STATEMENT:  SELECT "providers".* FROM "providers"  WHERE "providers"."company_id" = $1
+ERROR:  unrecognized configuration parameter "tables"
+STATEMENT:  show tables;
+ERROR:  syntax error at or near "describe" at character 1
+STATEMENT:  describe providers;
+ERROR:  syntax error at or near ";" at character 43
+STATEMENT:  alter table providers add column compay_id;
+ERROR:  syntax error at or near "(" at character 43
+STATEMENT:  alter table providers add column compay_id(int);
+ERROR:  column providers.company_id does not exist at character 46
+STATEMENT:  SELECT "providers".* FROM "providers"  WHERE "providers"."company_id" = $1
+ERROR:  column providers.company_id does not exist at character 46
+STATEMENT:  SELECT "providers".* FROM "providers"  WHERE "providers"."company_id" = $1
+ERROR:  column providers.company_id does not exist at character 46
+STATEMENT:  SELECT "providers".* FROM "providers"  WHERE "providers"."company_id" = $1
+ERROR:  column providers.company_id does not exist at character 46
+STATEMENT:  SELECT "providers".* FROM "providers"  WHERE "providers"."company_id" = $1
