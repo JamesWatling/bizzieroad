@@ -1,6 +1,6 @@
 var personData = [];
 
-$.getJSON( "http://localhost:3000/api/get")
+$.getJSON( "https://morning-cliffs-4095.herokuapp.com/api/get")
   .done(function( json ) {
     personData = json;
     console.log("success");
