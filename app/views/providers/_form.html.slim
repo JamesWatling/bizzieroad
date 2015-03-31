@@ -1,9 +1,8 @@
 .scaffold-form
-  = simple_form_for(provider) do |f|
+  = simple_form_for(provider, mutlipart: true) do |f|
     .form-inputs
-      = f.association :industry
       = f.input :name
-      = f.input :logo
+      = f.input :default_icon, as: :file 
 
     .form-actions
       = f.button :submit

@@ -7,9 +7,12 @@ class Company < ActiveRecord::Base
   after_validation :geocode
 
   def provider_logo
-    providers.first.logo unless providers.first.nil?
+    if providers.first.nil?
+      Provider.find_by(name: 'Other').default_icon.url
+    else
+      providers.first.default_icon.url 
+    end
   end
-
 
   def full_address
     "#{address}, New Zealand"

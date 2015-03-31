@@ -29,6 +29,6 @@ module RailsBase
     config.noreply = 'noreply@fs-rails-base.herokuapp.com'
 
     # Default host for action mailer, initializers/mailer.rb
-    # config.host = 'localhost:5000'
+    config.host = 'localhost:5000'
   end
 end

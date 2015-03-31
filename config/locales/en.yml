@@ -84,6 +84,7 @@ en:
       main:
         dashboard: 'Dashboard'
         companies: 'Companies'
+        providers: 'Providers'
       user:
         sign_in: 'Sign in'
         sign_out: 'Sign out'

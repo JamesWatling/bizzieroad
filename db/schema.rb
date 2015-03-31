@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150331031738) do
+ActiveRecord::Schema.define(version: 20150331211053) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,17 @@ ActiveRecord::Schema.define(version: 20150331031738) do
     t.float    "lat"
     t.float    "lng"
     t.integer  "provider_id"
+    t.string   "decision_maker"
+    t.string   "decision_maker_position"
+    t.string   "decision_maker_location"
+    t.string   "email"
+    t.string   "initial_contact_person"
+    t.string   "connections"
+    t.string   "connection_type"
+    t.datetime "renewal_date"
+    t.integer  "interest_level"
+    t.text     "notes"
+    t.string   "rep_name"
   end
 
   add_index "companies", ["provider_id"], name: "index_companies_on_provider_id", using: :btree
@@ -37,6 +48,10 @@ ActiveRecord::Schema.define(version: 20150331031738) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "company_id"
+    t.string   "default_icon_file_name"
+    t.string   "default_icon_content_type"
+    t.integer  "default_icon_file_size"
+    t.datetime "default_icon_updated_at"
   end
 
   add_index "providers", ["industry_id"], name: "index_providers_on_industry_id", using: :btree

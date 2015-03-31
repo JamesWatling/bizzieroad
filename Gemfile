@@ -33,6 +33,8 @@ gem 'thin'
 gem 'rabl'
 gem 'oj'
 gem 'geocoder'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'aws-sdk'
 
 group :staging, :production do
   gem 'rails_12factor'
