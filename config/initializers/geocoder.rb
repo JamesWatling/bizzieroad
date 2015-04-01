@@ -4,7 +4,7 @@ Geocoder.configure do |config|
   ## and provide custom parameters.
 
   config.timeout      = 3           # geocoding service timeout (secs)
-  config.lookup       = :google     # name of geocoding service (symbol)
+  config.lookup       = :yandex     # name of geocoding service (symbol)
   config.language     = :en         # ISO-639 language code
   config.api_key      = nil         # API key for geocoding service
   config.cache_prefix = "geocoder:" # prefix (string) to use for all cache keys
