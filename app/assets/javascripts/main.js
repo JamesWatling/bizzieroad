@@ -84,7 +84,16 @@ var myMap = function() {
 			if( j > 10 ) j = 1; // for lorempixel, the thumbnail image
 			var content = ['<div class="iw-text"><strong>', person.company,
 				'</strong><br>Address: ', person.address,
-				'<br>ISP: ', person.isp, '</div></div>'].join('');
+				'<br>Decision Maker: ', person.decision_maker, 
+				'<br>Decision Maker Position: ', person.decision_maker_position, 
+				'<br>Decision Maker Location: ', person.decision_maker_location, 
+				'<br>Phone Number: ', person.phone_number, 
+				'<br>email: ', person.email, 
+				'<br>Connections: ', person.connections, 
+				'<br>Connection Type: ', person.connection_type, 
+				'<br>Interest Level: ', person.interest_level, 
+				'<br>Notes: ', person.notes, 
+				'</div></div>'].join('');
 			j++; // lorempixel
 			
 			google.maps.event.addListener(marker, 'click', (function (marker, content) {
