@@ -195,8 +195,8 @@ var myMap = function() {
 		The keys in this need to be mapped 1-to-1 with the keys in the filter variable.
 	*/
 	filterMap = {
-		user: function( value ) {
-			return filterByString('user', value);
+		rep_name: function( value ) {
+			return filterByString('rep_name', value);
 		},
 
 		isp: function( value ) {
@@ -290,7 +290,7 @@ $(function() {
 	});
 
 	$('.users-select').on('change', function() {
-		myMap.filterCtrl('user', this.value);
+		myMap.filterCtrl('rep_name', this.value);
 	});
 
 	$('.from-select').on('change', function() {
