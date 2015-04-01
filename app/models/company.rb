@@ -17,4 +17,12 @@ class Company < ActiveRecord::Base
   def full_address
     "#{address}, New Zealand"
   end
+
+  def provider
+    if providers.first.nil?
+      Provider.find_by(name: 'Other').name
+    else
+      providers.first.name
+    end
+  end
 end

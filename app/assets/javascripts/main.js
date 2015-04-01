@@ -79,8 +79,7 @@ var myMap = function() {
 			markerList.push(person.id);
 
 			if( j > 10 ) j = 1; // for lorempixel, the thumbnail image
-			var content = ['<div class="iw"><img src="http://lorempixel.com/90/90/people/',
-				j, '" width="90" height="90">', '<div class="iw-text"><strong>', person.name,
+			var content = ['<div class="iw-text"><strong>', person.company,
 				'</strong><br>Address: ', person.address,
 				'<br>ISP: ', person.isp, '</div></div>'].join('');
 			j++; // lorempixel
