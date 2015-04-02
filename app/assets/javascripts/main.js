@@ -213,6 +213,10 @@ var myMap = function() {
 
 		isp: function( value ) {
 			return filterByString('isp', value);
+		},
+
+		interest: function( value ) {
+			return filterByString('interest_level', value);
 		}
 	}
 
@@ -305,9 +309,11 @@ $(function() {
 		myMap.filterCtrl('rep_name', this.value);
 	});
 
-	$('.from-select').on('change', function() {
-		myMap.filterCtrl('from', this.value);
+	$('.interest-select').on('change', function() {
+		myMap.filterCtrl('interest', this.value);
 	});
+
+
 });
 
 

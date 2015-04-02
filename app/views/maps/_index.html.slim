@@ -41,13 +41,22 @@
                 option value="0"  Any
                 option value="Alex"  Alex
             .filter-set
-              label for="isp-select"  isp:
+              label for="isp-select"  Provider:
               select#isp-select.isp-select name="isp-select" 
                 option value="0"  Any
                 option value="Vodafone"  Vodafone
                 option value="2degrees"  2Deg
                 option value="Spark"  Spark
                 option value="Other"  Unknown
+            /!
+            .filter-set
+              label for="interest-select"  Interest Level:
+              select#interest-select.interest-select name="interest-select" 
+                option value="-1"  Any
+                option value="0"  0
+                option value="1"  1
+                option value="2"  2
+                option value="3"  3
             /!
               | <div class="filter-set"
               | <label for="from-select">From:</label
