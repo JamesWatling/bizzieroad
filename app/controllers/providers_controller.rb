@@ -22,6 +22,6 @@ class ProvidersController < ApplicationController
   private
 
   def provider_params
-    params.require(:provider).permit(:industry, :name, :default_icon)
+    params.require(:provider).permit(:industry, :name, :default_icon, :hot_icon)
   end
 end
